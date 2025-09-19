@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - His N Hers Mobile Detailing | Auto Detailing Services in Haslet, TX</title>
+    <meta name="description" content="Professional mobile auto detailing services in Haslet, TX. Exterior wash, interior detail, full detail packages, and add-ons like pet hair removal and headlight restoration.">
+    <meta name="keywords" content="mobile detailing Haslet, car detailing services, interior car cleaning, exterior wash and wax, headlight restoration, pet hair removal car">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        secondary: '#0EA5E9', 
+                        accent: '#10B981',
+                        dark: '#0F172A',
+                        muted: '#F1F5F9'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .text-gradient {
+            background: linear-gradient(135deg, #1E40AF, #0EA5E9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body text-dark bg-white">
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:z-50">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="/assets/logo.png" alt="His N Hers Mobile Detailing Logo" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="hidden">
+                            <span class="text-xl font-display font-bold text-gradient">His N Hers</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Home</a>
+                        <a href="/about.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">About</a>
+                        <a href="/services.html" class="text-primary font-medium border-b-2 border-primary px-3 py-2">Services</a>
+                        <a href="/pricing.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Pricing</a>
+                        <a href="/contact.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="tel:424-209-5132" class="bg-primary text-white px-6 py-2 rounded-lg font-medium btn-hover">
+                        Call Now
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700 hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="/" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">About</a>
+                    <a href="/services.html" class="text-primary font-medium block px-3 py-2 border-l-4 border-primary bg-muted">Services</a>
+                    <a href="/pricing.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Pricing</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="md:hidden fixed bottom-4 left-4 right-4 z-50">
+        <a href="/contact.html" class="bg-primary text-white text-center py-3 px-6 rounded-lg font-medium shadow-lg btn-hover block">
+            Book Now
+        </a>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="bg-muted py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">Our Services</h1>
+                <p class="text-xl text-gray-600">Professional mobile auto detailing services designed to keep your vehicle looking its absolute best. We bring the car wash to you!</p>
+            </div>
+        </section>
+
+        <!-- Service Tiers -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Exterior Wash -->
+                    <div class="bg-white p-8 rounded-lg shadow-md card-hover">
+                        <div class="text-center mb-6">
+                            <div class="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m13 0H3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-display font-bold mb-2">Exterior Wash</h3>
+                            <p class="text-gray-600">Complete exterior cleaning and protection for a showroom shine.</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-3">What's Included:</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Pre-rinse and foam application
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Hand wash with premium soap
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Wheel and tire cleaning
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Clay bar treatment (if needed)
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Premium wax application
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Window cleaning (exterior)
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Tire shine application
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="/pricing.html" class="bg-secondary text-white px-6 py-3 rounded-lg font-medium btn-hover inline-block">
+                                View Pricing
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interior Detail -->
+                    <div class="bg-white p-8 rounded-lg shadow-md card-hover">
+                        <div class="text-center mb-6">
+                            <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-display font-bold mb-2">Interior Detail</h3>
+                            <p class="text-gray-600">Deep cleaning and conditioning for a fresh, comfortable interior.</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-3">What's Included:</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Complete vacuuming (seats, carpets, trunk)
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Dashboard and console cleaning
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Leather/fabric seat cleaning & conditioning
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Door panel and trim cleaning
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Window cleaning (interior)
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Air freshener application
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    UV protection for surfaces
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="/pricing.html" class="bg-accent text-white px-6 py-3 rounded-lg font-medium btn-hover inline-block">
+                                View Pricing
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Full Detail -->
+                    <div class="bg-white p-8 rounded-lg shadow-md card-hover border-2 border-primary relative">
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">Most Popular</span>
+                        </div>
+                        <div class="text-center mb-6">
+                            <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-display font-bold mb-2">Full Detail</h3>
+                            <p class="text-gray-600">Complete interior and exterior detailing for maximum impact and protection.</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-semibold mb-3">What's Included:</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <strong>Everything from Exterior Wash</strong>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <strong>Everything from Interior Detail</strong>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Engine bay cleaning (exterior)
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Trunk/cargo area detail
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Paint decontamination
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Premium paint sealant
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    30-day protection guarantee
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="/pricing.html" class="bg-primary text-white px-6 py-3 rounded-lg font-medium btn-hover inline-block">
+                                View Pricing
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add-ons -->
+        <section class="py-16 px-4 bg-muted">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Add-On Services</h2>
+                    <p class="text-xl text-gray-600">Enhance your detail with these specialized services for even better results.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Pet Hair Removal</h3>
+                        <p class="text-gray-600 text-sm mb-3">Specialized equipment and techniques to remove stubborn pet hair from upholstery.</p>
+                        <p class="font-semibold text-primary">+$25-50</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Headlight Restoration</h3>
+                        <p class="text-gray-600 text-sm mb-3">Restore cloudy, yellowed headlights to improve visibility and appearance.</p>
+                        <p class="font-semibold text-primary">+$40-60</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Ceramic Coating</h3>
+                        <p class="text-gray-600 text-sm mb-3">Long-lasting protection with superior shine and hydrophobic properties.</p>
+                        <p class="font-semibold text-primary">+$150-300</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Odor Elimination</h3>
+                        <p class="text-gray-600 text-sm mb-3">Professional ozone treatment for smoke, pet, or other persistent odors.</p>
+                        <p class="font-semibold text-primary">+$50-100</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Process</h2>
+                    <p class="text-xl text-gray-600">See how we deliver exceptional results with every service.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-3">Book & Schedule</h3>
+                        <p class="text-gray-600">Contact us to schedule your service. We'll confirm details and arrival time.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-3">We Come to You</h3>
+                        <p class="text-gray-600">Our team arrives with all equipment and supplies. No need to leave your location.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-2xl font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-3">Professional Results</h3>
+                        <p class="text-gray-600">Enjoy your freshly detailed vehicle with results that exceed expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4 bg-primary text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Ready to Transform Your Vehicle?</h2>
+                <p class="text-xl mb-8 opacity-90">Choose the service that's right for you and experience the His N Hers difference.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg btn-hover">
+                        Book Your Service
+                    </a>
+                    <a href="/pricing.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg btn-hover hover:bg-white hover:text-primary">
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4">His N Hers Mobile Detailing</h3>
+                    <p class="text-gray-300 mb-4">Professional mobile auto detailing services in Haslet, TX and surrounding areas.</p>
+                    <p class="text-gray-300">Licensed & Insured</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="/services.html" class="text-white font-medium">Services</a></li>
+                        <li><a href="/pricing.html" class="text-gray-300 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="/contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <a href="tel:424-209-5132" class="hover:text-white transition-colors">
+                                Phone: (424) 209-5132
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:joshuacastro1@hotmail.com" class="hover:text-white transition-colors">
+                                Email: joshuacastro1@hotmail.com
+                            </a>
+                        </li>
+                        <li>Location: Haslet, Texas</li>
+                        <li>Hours: Mon-Sat 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Instagram</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Google</a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Google Business Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 His N Hers Mobile Detailing. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="/privacy.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a> |
+                    <a href="/terms.html" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobile-menu');
+            const button = event.target.closest('button');
+            
+            if (!menu.contains(event.target) && !button) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

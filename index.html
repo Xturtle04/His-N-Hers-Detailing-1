@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>His N Hers Mobile Detailing - Professional Auto Detailing in Haslet, TX</title>
+    <meta name="description" content="Professional mobile auto detailing in Haslet, TX. Interior cleaning, exterior wash, full detail packages. Call (424) 209-5132 for a free quote!">
+    <meta name="keywords" content="mobile detailing Haslet, car detailing Haslet TX, auto detailing near me, interior car cleaning Haslet, exterior wash and wax Haslet">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="His N Hers Mobile Detailing - Professional Auto Detailing">
+    <meta property="og:description" content="Professional mobile auto detailing in Haslet, TX. We come to you!">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        secondary: '#0EA5E9', 
+                        accent: '#10B981',
+                        dark: '#0F172A',
+                        muted: '#F1F5F9'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1E40AF 0%, #0EA5E9 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #1E40AF, #0EA5E9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-body text-dark bg-white">
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:z-50">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="/assets/logo.png" alt="His N Hers Mobile Detailing Logo" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="hidden">
+                        <span class="text-xl font-display font-bold text-gradient">His N Hers</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/" class="text-primary font-medium border-b-2 border-primary px-3 py-2">Home</a>
+                        <a href="/about.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">About</a>
+                        <a href="/services.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Services</a>
+                        <a href="/pricing.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Pricing</a>
+                        <a href="/contact.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="tel:424-209-5132" class="bg-primary text-white px-6 py-2 rounded-lg font-medium btn-hover">
+                        Call Now
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700 hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="/" class="text-primary font-medium block px-3 py-2 border-l-4 border-primary bg-muted">Home</a>
+                    <a href="/about.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">About</a>
+                    <a href="/services.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Services</a>
+                    <a href="/pricing.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Pricing</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="md:hidden fixed bottom-4 left-4 right-4 z-50">
+        <a href="/contact.html" class="bg-primary text-white text-center py-3 px-6 rounded-lg font-medium shadow-lg btn-hover block">
+            Book Now
+        </a>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white py-20 px-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">
+                    Professional Mobile Auto Detailing Done Right
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                    We bring premium auto detailing services directly to your location in Haslet, TX and surrounding areas. No need to leave home or work!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="/contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg btn-hover">
+                        Book a Detail
+                    </a>
+                    <a href="tel:424-209-5132" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg btn-hover hover:bg-white hover:text-primary">
+                        Get Free Quote
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Props -->
+        <section class="py-16 px-4 bg-muted">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-2">Mobile Convenience</h3>
+                        <p class="text-gray-600">We come to you! No need to drive anywhere or wait in line.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-2">Quality Guaranteed</h3>
+                        <p class="text-gray-600">Professional results with attention to every detail.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-2">Local Service</h3>
+                        <p class="text-gray-600">Proudly serving Haslet, Fort Worth, Keller, and surrounding areas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-12">Our Services</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <h3 class="text-xl font-display font-semibold mb-3">Exterior Wash</h3>
+                        <p class="text-gray-600 mb-4">Complete exterior cleaning and protection for a showroom shine.</p>
+                        <a href="/services.html" class="text-primary font-medium hover:underline">Learn more →</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <h3 class="text-xl font-display font-semibold mb-3">Interior Detail</h3>
+                        <p class="text-gray-600 mb-4">Deep cleaning and conditioning for a fresh, comfortable interior.</p>
+                        <a href="/services.html" class="text-primary font-medium hover:underline">Learn more →</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <h3 class="text-xl font-display font-semibold mb-3">Full Detail</h3>
+                        <p class="text-gray-600 mb-4">Complete interior and exterior detailing for maximum impact.</p>
+                        <a href="/services.html" class="text-primary font-medium hover:underline">Learn more →</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <h3 class="text-xl font-display font-semibold mb-3">Add-ons</h3>
+                        <p class="text-gray-600 mb-4">Pet hair removal, headlight restoration, and ceramic coating.</p>
+                        <a href="/services.html" class="text-primary font-medium hover:underline">Learn more →</a>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="/pricing.html" class="bg-primary text-white px-8 py-3 rounded-lg font-medium btn-hover">
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges -->
+        <section class="py-12 px-4 bg-muted">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center text-center">
+                    <div>
+                        <div class="text-2xl font-bold text-primary">5+ Years</div>
+                        <div class="text-gray-600">Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-primary">500+</div>
+                        <div class="text-gray-600">Happy Customers</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-primary">100%</div>
+                        <div class="text-gray-600">Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-primary">Licensed</div>
+                        <div class="text-gray-600">& Insured</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Ready to Give Your Car the Treatment It Deserves?</h2>
+                <p class="text-xl text-gray-600 mb-8">Contact us today for a free quote and see why customers trust His N Hers Mobile Detailing.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact.html" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg btn-hover">
+                        Book a Detail
+                    </a>
+                    <a href="tel:424-209-5132" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg btn-hover hover:bg-primary hover:text-white">
+                        Call (424) 209-5132
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4">His N Hers Mobile Detailing</h3>
+                    <p class="text-gray-300 mb-4">Professional mobile auto detailing services in Haslet, TX and surrounding areas.</p>
+                    <p class="text-gray-300">Licensed & Insured</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="/services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="/pricing.html" class="text-gray-300 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="/contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <a href="tel:424-209-5132" class="hover:text-white transition-colors">
+                                Phone: (424) 209-5132
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:joshuacastro1@hotmail.com" class="hover:text-white transition-colors">
+                                Email: joshuacastro1@hotmail.com
+                            </a>
+                        </li>
+                        <li>Location: Haslet, Texas</li>
+                        <li>Hours: Mon-Sat 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Instagram</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Google</a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Google Business Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 His N Hers Mobile Detailing. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="/privacy.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a> |
+                    <a href="/terms.html" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobile-menu');
+            const button = event.target.closest('button');
+            
+            if (!menu.contains(event.target) && !button) {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "His N Hers Mobile Detailing",
+        "description": "Professional mobile auto detailing services in Haslet, TX",
+        "url": "https://hisnhersmobiledetailing.com",
+        "telephone": "+1-424-209-5132",
+        "email": "joshuacastro1@hotmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Haslet",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.9698",
+            "longitude": "-97.3428"
+        },
+        "openingHours": [
+            "Mo-Sa 08:00-18:00"
+        ],
+        "serviceArea": {
+            "@type": "City",
+            "name": "Haslet, Fort Worth, Keller, Saginaw, Alliance"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Auto Detailing Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Exterior Wash",
+                        "description": "Complete exterior cleaning and protection"
+                    }
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Interior Detail",
+                        "description": "Deep cleaning and conditioning for interior"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Full Detail",
+                        "description": "Complete interior and exterior detailing"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "https://facebook.com/placeholder",
+            "https://instagram.com/placeholder",
+            "https://google.com/maps/placeholder"
+        ]
+    }
+    </script>
+
+    <!-- Google Analytics (placeholder) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+</body>
+</html>

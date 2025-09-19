@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - His N Hers Mobile Detailing | Professional Auto Detailing in Haslet, TX</title>
+    <meta name="description" content="Learn about His N Hers Mobile Detailing - your trusted mobile auto detailing service in Haslet, TX. Quality, convenience, and attention to detail.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        secondary: '#0EA5E9', 
+                        accent: '#10B981',
+                        dark: '#0F172A',
+                        muted: '#F1F5F9'
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+        .text-gradient {
+            background: linear-gradient(135deg, #1E40AF, #0EA5E9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
+        }
+    </style>
+</head>
+<body class="font-body text-dark bg-white">
+    <!-- Skip to content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:z-50">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="/assets/logo.png" alt="His N Hers Mobile Detailing Logo" class="h-10 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="hidden">
+                            <span class="text-xl font-display font-bold text-gradient">His N Hers</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Home</a>
+                        <a href="/about.html" class="text-primary font-medium border-b-2 border-primary px-3 py-2">About</a>
+                        <a href="/services.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Services</a>
+                        <a href="/pricing.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Pricing</a>
+                        <a href="/contact.html" class="text-gray-700 hover:text-primary transition-colors px-3 py-2">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="tel:424-209-5132" class="bg-primary text-white px-6 py-2 rounded-lg font-medium btn-hover">
+                        Call Now
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700 hover:text-primary focus:outline-none focus:text-primary" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t">
+                    <a href="/" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Home</a>
+                    <a href="/about.html" class="text-primary font-medium block px-3 py-2 border-l-4 border-primary bg-muted">About</a>
+                    <a href="/services.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Services</a>
+                    <a href="/pricing.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Pricing</a>
+                    <a href="/contact.html" class="text-gray-700 hover:text-primary block px-3 py-2 transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="md:hidden fixed bottom-4 left-4 right-4 z-50">
+        <a href="/contact.html" class="bg-primary text-white text-center py-3 px-6 rounded-lg font-medium shadow-lg btn-hover block">
+            Book Now
+        </a>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="bg-muted py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-display font-bold mb-6">About His N Hers Mobile Detailing</h1>
+                <p class="text-xl text-gray-600">Professional mobile auto detailing services you can trust, bringing quality and convenience directly to your doorstep in Haslet, TX.</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Image Placeholder -->
+                    <div class="order-2 lg:order-1">
+                        <img src="/assets/about-photo.jpg" alt="His N Hers Mobile Detailing team at work" class="w-full h-96 object-cover rounded-lg shadow-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="hidden w-full h-96 bg-muted rounded-lg shadow-lg flex items-center justify-center">
+                            <span class="text-gray-500 text-lg">Team Photo Placeholder</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl font-display font-bold mb-6">Our Story</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            His N Hers Mobile Detailing was founded with a simple mission: to provide exceptional auto detailing services with unmatched convenience. We understand that your time is valuable, which is why we bring our professional services directly to your home or office.
+                        </p>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            With years of experience in the auto detailing industry, our team has perfected the art of making vehicles look their absolute best. We take pride in our attention to detail and commitment to customer satisfaction.
+                        </p>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            Every vehicle tells a story, and we're here to help yours shine. From daily drivers to luxury vehicles, we treat every car with the same level of care and precision.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="/contact.html" class="bg-primary text-white px-6 py-3 rounded-lg font-medium btn-hover text-center">
+                                Get Started
+                            </a>
+                            <a href="/services.html" class="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium btn-hover hover:bg-primary hover:text-white text-center">
+                                View Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values -->
+        <section class="py-16 px-4 bg-muted">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Our Mission & Values</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're committed to delivering exceptional results while making the process as convenient as possible for our customers.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-4">Quality First</h3>
+                        <p class="text-gray-600">We never compromise on quality. Every detail matters, and we ensure exceptional results every time.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-4">Convenience</h3>
+                        <p class="text-gray-600">Mobile service means we come to you. Save time and enjoy the convenience of professional detailing at your location.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-display font-semibold mb-4">Customer Care</h3>
+                        <p class="text-gray-600">Your satisfaction is our priority. We build lasting relationships through excellent service and attention to detail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Area -->
+        <section class="py-16 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-display font-bold mb-6">Service Area</h2>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            We proudly serve Haslet, Texas and the surrounding communities. Our mobile service radius includes Fort Worth, Keller, Saginaw, Alliance, and other nearby areas.
+                        </p>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            No matter where you are within our service area, we'll bring our professional detailing services directly to your location - whether that's your home, office, or any other convenient spot.
+                        </p>
+                        
+                        <div class="bg-muted p-6 rounded-lg">
+                            <h3 class="font-semibold mb-3">Primary Service Areas:</h3>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Haslet, TX</li>
+                                <li>• Fort Worth, TX</li>
+                                <li>• Keller, TX</li>
+                                <li>• Saginaw, TX</li>
+                                <li>• Alliance, TX</li>
+                                <li>• And surrounding areas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Placeholder -->
+                    <div>
+                        <div class="bg-muted h-96 rounded-lg flex items-center justify-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1234567890!2d-97.3428!3d32.9698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7a5b7b5b7b5b%3A0x5b5b5b5b5b5b5b5b!2sHaslet%2C%20TX!5e0!3m2!1sen!2sus!4v1234567890" 
+                                    width="100%" height="384" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 px-4 bg-primary text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-6">Ready to Experience the Difference?</h2>
+                <p class="text-xl mb-8 opacity-90">Join hundreds of satisfied customers who trust His N Hers Mobile Detailing for their vehicle care needs.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg btn-hover">
+                        Book Your Detail
+                    </a>
+                    <a href="tel:424-209-5132" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg btn-hover hover:bg-white hover:text-primary">
+                        Call (424) 209-5132
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-display font-bold mb-4">His N Hers Mobile Detailing</h3>
+                    <p class="text-gray-300 mb-4">Professional mobile auto detailing services in Haslet, TX and surrounding areas.</p>
+                    <p class="text-gray-300">Licensed & Insured</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/about.html" class="text-white font-medium">About</a></li>
+                        <li><a href="/services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="/pricing.html" class="text-gray-300 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="/contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <a href="tel:424-209-5132" class="hover:text-white transition-colors">
+                                Phone: (424) 209-5132
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:joshuacastro1@hotmail.com" class="hover:text-white transition-colors">
+                                Email: joshuacastro1@hotmail.com
+                            </a>
+                        </li>
+                        <li>Location: Haslet, Texas</li>
+                        <li>Hours: Mon-Sat 8:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Facebook</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Instagram</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Google</a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Google Business Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 His N Hers Mobile Detailing. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="/privacy.html" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a> |
+                    <a href="/terms.html" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('mobile-menu');
+            const button = event.target.closest('button');
+            
+            if (!menu.contains(event.target) && !button) {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
